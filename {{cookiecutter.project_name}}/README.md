@@ -3,14 +3,11 @@ A short description of the project.
 
 ## New Installation 
 ```bash
-# create conda environment
-conda create --name {{cookiecutter.project_name}} python=3 -y
+# create virtual environment
+mkvirtualenv -p python3 -r requirements.txt {{cookiecutter.project_name}}
 
 # activate the environment
-conda activate {{cookiecutter.project_name}}
-
-# install setuptools (conveniant for combining src code within notebooks)
-pip install -r requirements.txt
+workon {{cookiecutter.project_name}}
 ```
 
 ## Project Organization
